@@ -11,7 +11,7 @@ end
 
 local E_MODEL_CHAR =      smlua_model_util_get_id("syning_geo")
 local ANIMTABLE_SYNING = {
-    [charSelect.CS_ANIM_MENU] = 'SYNINGPOSE'
+    [_G.charSelect.CS_ANIM_MENU] = 'SYNINGPOSE'
 }
 
 local PALETTE_CHAR = {
@@ -22,13 +22,13 @@ local PALETTE_CHAR = {
     [HAIR]   = "2D54FFFF",
     [SKIN]   = "FFA781FF",
     [CAP]    = "2D54FFFF",
-	[EMBLEM] = "05031AFF"
+    [EMBLEM] = "05031AFF"
 }
 
 local CSloaded = false
 local function on_character_select_load()
     
-    CT_CHAR = _G.charSelect.character_add(
+    CT_SYNING = _G.charSelect.character_add(
         "Syning", -- Character Name
         "Blue hair and pronouns incarnated,,,", -- Description
         "Syning, Winbowbreaker Charlotte", -- Credits
